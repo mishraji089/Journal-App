@@ -1,0 +1,23 @@
+<configuation>
+
+    <appender name="myConsoleApender" class="ch.qos.logback.core.ConsoleAppender">
+     <encoder>
+         <pattern>
+             
+         </pattern>
+     </encoder>
+    </appender>
+
+    <appender name="myFileApender" class="ch.qos.logback.core.FileAppender">
+        <file>
+            journalApp.log
+        </file>
+
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="myConsoleAppender"/>
+        <appender-ref ref="myFileAppender"/>
+    </root>
+</configuation>
+
